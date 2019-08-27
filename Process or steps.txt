@@ -1,0 +1,28 @@
+Step 1: Run ctallu.ps1
+           Enter Azure Portal credentials when prompted.
+           Enter VM credentials(any) when prompted.
+           Login into Azure portal and see the required N-Tier            infrastructure created.
+
+Step 2:Clean,Re-Build and execute web api "Azurewebapiapp.sln" .
+
+If any assemblies are missing , please down below assemblies from NUGET
+
+Microsoft.Azure.Management.Compute.Fluent;
+
+Microsoft.Azure.Management.Compute.Fluent.Models;
+
+Microsoft.Azure.Management.Fluent;
+
+Microsoft.Azure.Management.ResourceManager.Fluent;
+
+Microsoft.Azure.Management.ResourceManager.Fluent.Core;
+
+Microsoft.Azure.Management.Samples.Common;
+System.Threading.Tasks;
+
+Step 3:While the webapi in Step 2 is running.Build and Execute the "ang6vmapp" project . You will see the user interface loaded. Please enter the VM data in the filed provided and submit. Its create a new VM ,new NAtrule , NIC and add them to existing load balancer and subnet.
+
+{"Operation results in exceeding quota limits of Core. Maximum allowed: 20, Current in use: 20, Additional requested: 4. Please read more about quota increase at https://aka.ms/ProdportalCRP/?#create/Microsoft.Support/Parameters/{\"subId\":\"c1f177d4-14fa-4c26-bd62-609dec40c5f0\",\"pesId\":\"15621\",\"supportTopicId\":\"32447243\"}."}
+
+
+             
